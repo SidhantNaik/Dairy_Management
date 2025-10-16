@@ -22,3 +22,18 @@
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
 replay_pid*
+
+# Database data files
+/data/
+*.frm
+*.opt
+*.info
+*.pid
+*.index
+
+# Database log files
+*.log
+ibdata1
+ib_logfile*
+ib_buffer_pool
+aria_log*

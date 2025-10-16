@@ -1,2 +1,14 @@
 # Auto detect text files and perform LF normalization
 * text=auto
+
+# Treat common binary files as binary to avoid CRLF conversions
+*.jar binary
+*.war binary
+*.ear binary
+*.zip binary
+*.png binary
+*.jpg binary
+*.gif binary
+
+# Mark the data directory as binary to avoid line-ending normalization and diff noise
+data/** binary
